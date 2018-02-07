@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # bin/release <build-dir>
+BUILD_DIR=$1
 
 echo 'default_process_types:'
 
-echo '  web: nodejs_8.9.x_LTS/bin/node index.js'
+echo '  web: $BUILD_DIR/.nodejs_8.9.x_LTS/bin/node index.js'
