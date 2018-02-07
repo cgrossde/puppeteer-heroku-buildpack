@@ -3,4 +3,4 @@
 
 echo 'default_process_types:'
 
-echo '  web: /usr/local/bin/node index.js'
+echo '  web: nodejs_8.9.x_LTS/bin/node index.js'
