@@ -65,8 +65,8 @@ for DEB in $(ls -1 $APT_CACHE_DIR/archives/*.deb); do
 done
 
 topic "Installing nodejs LTS 8.9.x"
-curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-sudo apt-get install -y nodejs
+curl -sL https://deb.nodesource.com/setup_8.x | bash
+apt-get install -y nodejs
 which node
 
 topic "Writing profile script"
