@@ -65,11 +65,9 @@ for DEB in $(ls -1 $APT_CACHE_DIR/archives/*.deb); do
 done
 
 topic "Installing nodejs LTS 8.9.x"
-cd $BUILD_DIR
-mkdir $BUILD_DIR/.nodejs_8.9.x_LTS
-wget --quiet https://nodejs.org/dist/v8.9.4/node-v8.9.4-linux-x86.tar.xz
-tar -C $BUILD_DIR/.nodejs_8.9.x_LTS --strip-components 1 -xJf node-v8.9.4-linux-x86.tar.xz
-rm node-v8.9.4-linux-x86.tar.xz
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo apt-get install -y nodejs
+which node
 
 topic "Writing profile script"
 mkdir -p $BUILD_DIR/.profile.d
