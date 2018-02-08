@@ -3,4 +3,4 @@
 BUILD_DIR=$1
 
 echo 'default_process_types:'
-echo '  web: echo "$BUILD_DIR/.nodejs_8.9.x_LTS/bin/node" && pwd && ls -la && ./.nodejs_8.9.x_LTS/bin/node index.js'
+echo '  web: sleep 36000'
