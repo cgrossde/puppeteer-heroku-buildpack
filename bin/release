@@ -3,4 +3,4 @@
 BUILD_DIR=$1
 
 echo 'default_process_types:'
-echo '  web: sleep'
+echo '  web: echo'
